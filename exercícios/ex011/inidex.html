@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmenre aumente e diminua a tela do seu navegador.</p>
+
+    <picture>
+        <!--sempre colocar as imgs na ordem (p m g)-->
+        <source media="(max-width: 750px)" srcset="imagens/img-p.png" type="image/png"> <!--colocar 50px a mais do tamanho da img para n aparecer barra de rolagem-->
+        <source media="(max-width: 1050px)" srcset="imagens/img-m.png" type="image/png"> <!--colocar 50px a mais do tamanho da img para n aparecer barra de rolagem-->
+        <img src="imagens/img-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1> <!--formatos compatíveis c a maioria dos navegadores : MP3 WAV OGG  -->
+    
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+
+<!-- primeira maneira de add áudio
+    
+    <audio src="midia/happy-mistake.mp3" autoplay controls></audio>]
+
+-->
+    <!--a tag "  audio  " já cria o src automaticamente,temos q apagar e adicionar a tag " <source:src " dentro da taf audio-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"><!--evitar arquivos wav,pois são muito pesados,mp3e ogg resolve-->
+        <p>Infelizmente seu navegador não conseguiu reproduzir áudio. <a href="midia/guanacast-33.mp3">clique aqui para baixar em MP3.</a></p><!--a msg so aparecerá se o navegador n tiver compatibilidade com nenhuma das mídias-->
+    </audio>
+</body>
+</html>

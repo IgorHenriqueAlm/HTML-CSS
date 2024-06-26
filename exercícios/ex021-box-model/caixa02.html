@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(125, 125, 125);
+            padding: 3px;
+            box-shadow:  8px 3px 14px rgba(0, 0, 0, 0.66);
+            
+        }
+        nav>a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav>a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(158, 155, 155);
+        }
+        footer{
+            background-color: black;
+            padding: 3px;
+            margin: 0;
+            color: white;
+            text-align: center;
+        }
+        footer p{
+            margin: 0;
+        }
+        div#circle{
+            height: 100px;
+            width: 100px;
+            margin: 100px auto;
+            background-color: white;
+            border-radius: 50%; /*para formar um circulo*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esporte Plítica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit adipisci labore temporibus sapiente aperiam! Reprehenderit repellendus culpa, sint animi minus dolor voluptatum placeat quas vel nobis voluptate asperiores facere magnam!</p>
+                <aside>
+                    <p>artigo escrito por José da Sila</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em Video</p>
+    </footer> 
+    <div id="circle"></div>
+</body>
+</html>

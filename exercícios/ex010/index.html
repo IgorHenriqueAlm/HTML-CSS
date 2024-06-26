@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/">repositório público no GitHub</a>.</p>
+    <p>Você tambem pode acessar meu <a href="https://youtube.com/cursoemvideo/ " target="_blank" rel="external">canal gratuito no YouTube.</a> </p>  <!-- OBS: OS atributos da tag <a> 
+    "  target="_blank" rel="external"  "  usado no segundo link, serve para o link abrir em outra janela mantendo a página do site.
+    -->
+    
+    <h1>Usando links internos</h1>
+    <p>Essa é a primeira página do site.Se você quiser , pode acessar a minha <a href="pag002.html" target="_self" rel="next">segunda página. </a> </p>
+
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias.</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/Av1- Empreendedorismo.pdf" download="Av1- Empreendedorismo.pdf" type="application/pdf">Arquivo em pdf</a></li>
+    <!-- OBS: no caso acima apenas com o parametro
+    "  download="nome-do-arqv"  " o arquivo já conseguiria ser baixado,mas em alguns casos precisa de mais uma configuração, "  type="mediatype"  ",para conseguir fazer o download,como mostra acima -->
+    
+    <li><a href="livro/Av1- Empreendedorismo.rar">Arquivo zip</a></li>
+    <!-- OBS: no caso acima apenas com o link para o arquivo já consegue fazer o download.mas em alguns casos precisa do parametro "  download="nome-do-arqv"  e "  type="mediatype"  ",para conseguir fazer o download,como mostra no primeiro arquivo -->
+    </ul>
+</body>
+</html>

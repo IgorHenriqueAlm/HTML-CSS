@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkred;
+
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{/*quando clicar*/
+            color: yellow;
+        }
+
+        a::before{
+            content: '\002738';
+        }
+
+        a::after{
+            content: '\002738';
+        }
+
+        .especial::before{
+            content: '✬' '\002738';
+        }
+
+        .especial::after{
+            content: '\002738' '✬';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="">link 1</a></li>
+        <li><a href="" class="especial">link 2</a></li>
+        <li><a href="#" >link 3</a></li>
+    </ul>
+</body>
+</html>
