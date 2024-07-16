@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        .conteiner{
+            background-color: lightblue;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+        }
+
+        .item{
+            background-color: lightcoral;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+        .conteinerAL{
+            height: 300px;
+            background-color: lightblue;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            
+            align-items: center;
+        }
+
+        .itemAL{
+            background-color: lightcoral;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>justify-content</h1>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>align-items</h1>
+    <div class="conteinerAL">
+        <div class="itemAL">A</div>
+        <div class="itemAL">B</div>
+        <div class="itemAL">C</div>
+        <div class="itemAL">D</div>
+        <div class="itemAL">E</div>
+        <div class="itemAL">F</div>
+        <div class="itemAL">G</div>
+    </div>
+</body>
+</html>
